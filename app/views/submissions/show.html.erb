@@ -1,0 +1,6 @@
+
+<h1>All Artists</h1>
+<% @submissions.each do |submission| %>
+<%= link_to submission.message, submission%>
+ <% end %>
+<button><%= link_to "Add it here!", new_submission_path(@submission) %></h2></button>

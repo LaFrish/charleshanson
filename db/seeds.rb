@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Submission.destroy_all
+
+Farishta = User.create({name:"Farishta", email: "farishta.haider@gmail.com"})
+FMessage = Submission.create({message: "Happy Birthday"})

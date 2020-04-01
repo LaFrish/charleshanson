@@ -1,0 +1,25 @@
+
+<%= form_for :submission, url: submissions_path do |form| %>
+  <p>
+    <%= form.label :caption %><br>
+    <%= form.text_field :caption %>
+  </p>
+
+  <p>
+    <%= form.label :photo %><br>
+    <%= form.text_area :photo %>
+  </p>
+
+  <p>
+    <%= form.label :video %><br>
+    <%= form.text_area :video %>
+  </p>
+  <p>
+    <%= form.label :message %><br>
+    <%= form.text_area :message %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
