@@ -1,5 +1,15 @@
 
 <%= form_with scope: :submission, local: true do |form| %>
+
+  <p>
+    <%= form.label :user %><br>
+    <%= form.text_field :user %>
+  </p>
+
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
   <p>
     <%= form.label :caption %><br>
     <%= form.text_field :caption %>

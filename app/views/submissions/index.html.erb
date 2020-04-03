@@ -1,6 +1,15 @@
 
-<h1>All Artists</h1>
+<h1>All Submissions</h1>
 <% @submissions.each do |submission| %>
-<%= link_to submission.message, submission%>
+<div style="background: pink; margin: 5px;">
+
+
+<h1><%=  submission.caption %> </h1>
+<h1><%=  submission.photo %> </h1>
+<h1><%=  submission.video %> </h1>
+<h1><%=  submission.message %> </h1>
+<h1><%=  submission.user %> </h1>
+<h1><%=  submission.email %> </h1>
+  </div>
  <% end %>
-<button><%= link_to "Add it here!", new_submission_path(@submission) %></h2></button>
+<button><%= link_to "Add it here!", new_submission_path(@submission) %></button>
