@@ -15,6 +15,199 @@
  */
 
 
-body{
-  background: red;
+/* body{
+
+} */
+
+
+body {
+  /* line-height: 1.5;
+  max-width: 50em;
+  margin:auto;
+  padding:2em 1em; */
+  /* background: radial-gradient( ellipse farthest-corner at center, #f1c40f , #ff5858); */
+  background: #e5e5e5;
+  /* left: 50%;
+  height: 100vh; */
+  /* font-size: 40px; */
+  /* font-weight: lighter;
+  color: white;
+  background-attachment: fixed;
+  align-content: center;
+  text-align: center; */
 }
+
+.hero{
+  background: #2ebfc2;
+  width: 100%;
+  height: 20vh;
+  padding: 50px;
+}
+
+.messageCard{
+
+  margin: 25px;
+  padding: 50px;
+  text-align: left;
+}
+
+.sideOne{
+  background: #fff;
+}
+
+.sideTwo{
+  /* background: #fff; */
+}
+.leftCard{
+  /* background: pink; */
+  display: inline-flex;
+
+}
+
+.rightCard{
+  /* background: gray; */
+  display: inline-flex;
+}
+
+h1 {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  /* text-shadow: black 0.1em 0.1em 0.2em; */
+
+}
+
+h2 {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 28px;
+  color: #C22E75;
+  text-align: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 24px;
+  color: #f1c40f ;
+  align-items: center;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 18px;
+  color: #2ebfc2;
+}
+
+p {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 16px;
+  color: #2ebfc2;
+}
+
+a {
+  font-family: 'quiche-sans', sans-serif;
+  font-size: 16px;
+  /* color: #C22E75; */
+}
+  /* a:link {color:#C22E75; background-color:transparent; text-decoration:none}
+  a:visited {color:#38787a; background-color:transparent; text-decoration:none}
+  a:hover   {color:#f91791; background-color:transparent; text-decoration:none} */
+
+.container {
+  vertical-align: middle;
+}
+
+
+section {
+  background-color: white;
+  background-position: center;
+  color: #ff5858;
+  min-width: 500px;
+  position: center;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  /* -moz-box-shadow: 1px 1px 3px 2px #f00ea4;
+  -webkit-box-shadow: 1px 1px 3px 2px #f00ea4;
+  box-shadow:         1px 1px 3px 2px #f00ea4; */
+}
+
+label {
+  font: 500 14px Roboto;
+  color: #FB5781;
+}
+form {
+  height: 400px;
+  width: 650px;
+  margin: auto;
+  box-shadow: 0 15px 35px rgba(#000, .5);
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  transition: .4s, box-shadow .3s .4s;
+  /* &.hidden {
+    box-shadow: none;
+    transition: .4s, box-shadow 0s;
+    opacity: 0;
+    visibility: hidden;
+      .close {
+        height: 0;
+        width: 0;
+        top: 0;
+        right: 0;
+    }
+  } */
+}
+
+form {
+  background: rgba(#f1c40f, .9);
+  width: 50%;
+  height: 100%;
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input {
+  background: rgba(#FFF, .80);
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 25px;
+  color: #C22E75;
+  /* &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 500px lighten(#474747, 20%) inset;
+    -webkit-text-fill-color: #FFF;
+  } */
+}
+
+button {
+  display: inline-block;
+  /* font-family: 'Vidaloka', serif; */
+  width: 200px;
+  height: 75px;
+  vertical-align: middle;
+  text-align: center;
+  /* font-size: 24px; */
+  border-radius: .5em;
+  border-color: #f91791;
+  color: #C22E75;
+  margin: 10px 20px 20px 10px;
+  /* box-shadow: 0 0 40px 40px #f1c40f inset, 0 0 0 0 #ff5858; */
+  transition: all 150ms ease-in-out;
+
+ /* &:hover {
+   box-shadow: 0 0 10px 0 #ff5858 inset, 0 0 10px 0 #ff5858;
+ } */
+}
+
+/* .container{
+  margin: 100px;
+} */

@@ -1,14 +1,44 @@
+<div class="hero">
+<h1>Send a special message to Charles Hanson on his 100th Birthday!</h1>
+</div>
 
+<!-- <section class="intro">
+<h1>Send a special message to Charles Hanson on his 100th Birthday!</h1>
+</section> -->
+
+<!-- <#%= direct_upload_form_for @uploader do |f| %>
+  <p><#%= f.file_field :image %></p>
+  <p><#%= f.submit "Upload Image" %></p>
+<#% end %> -->
+
+<div class="container">
+
+  <div class="row">
 <% @submissions.each do |submission| %>
-<div style="background: pink; margin: 5px;">
+<div class="messageCard">
+    <div class="sideOne col-6">
+      <div class="col-6 leftCard">
+        <p>Message: <%=  submission.message %></p>
+      </div>
+      <div class="rightCard">
+        <p>From: <%=  submission.user %> </p>
+        <p>Email: <%=  submission.email %> </p>
+      </div>
+    </div>
+    <div class="sideTwo col-6 ">
 
-
-<h1><%=  submission.caption %> </h1>
-<h1><%=  submission.photo %> </h1>
-<h1><%=  submission.video %> </h1>
-<h1><%=  submission.message %> </h1>
-<h1><%=  submission.user %> </h1>
-<h1><%=  submission.email %> </h1>
+      <p><%=  submission.caption %> </p>
+      <p><%=  submission.video %> </p
+      <div class="">
+        <%= image_tag submission.image_url(:thumb).to_s  %>
+         <%=  submission.video %>
+      </div>
+      <p><%= link_to  submission.user,submission %></p>
+       <p><%= link_to "Edit", edit_submission_path(submission.id)%></p>
+       <p><%= link_to "Delete", submission_path(submission),  method: :delete %></p>
+    </div>
   </div>
- <% end %>
+</div>
+<% end %>
 <button><%= link_to "Add it here!", new_submission_path(@submission) %></button>
+</div>

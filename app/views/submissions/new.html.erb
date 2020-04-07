@@ -1,40 +1,42 @@
+<div class="new_from">
+  <div class="container">
 
-<%= form_for @submission do |form| %>
+    <%= form_for @submission, :html => {:multipart => true} do |form| %>
 
+    <h1>Add your message</h1>
+      <p>
+        <%= form.label :user %><br>
+        <%= form.text_field :user %>
+      </p>
+      <p>
+        <%= form.label :email %><br>
+        <%= form.text_field :email %>
+      </p>
+      <p>
+        <%= form.label :caption %><br>
+        <%= form.text_field :caption %>
+      </p>
+      <p>
+        <%= form.label :image %><br>
+        <!-- <#%= form.text_area :image %> -->
+        <%= form.file_field :image %>
+        <%= form.label :remote_image_url, "or image URL" %><br />
+        <%= form.text_field :remote_image_url %>
+      </p>
+      <p>
+        <%= form.label :video %><br>
+        <%= form.file_field :video %>
+        <!-- <#%= form.label :remote_video_url, "or video URL" %><br />
+        <#%= form.text_field :remote_video_url %> -->
+        <%= form.label :thumbnail %><br>
+        <%= form.file_field :thumbnail %>
 
-<h1>Add your message</h1>
-
-
-  <p>
-    <%= form.label :user %><br>
-    <%= form.text_field :user %>
-  </p>
-
-  <p>
-    <%= form.label :email %><br>
-    <%= form.text_field :email %>
-  </p>
-
-  <p>
-    <%= form.label :caption %><br>
-    <%= form.text_field :caption %>
-  </p>
-
-  <p>
-    <%= form.label :photo %><br>
-    <%= form.text_area :photo %>
-  </p>
-
-  <p>
-    <%= form.label :video %><br>
-    <%= form.text_area :video %>
-  </p>
-  <p>
-    <%= form.label :message %><br>
-    <%= form.text_area :message %>
-  </p>
-
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+      </p>
+      <p>
+        <%= form.label :message %><br>
+        <%= form.text_area :message %>
+      </p>
+      <%= form.submit %>
+      <% end %>
+  </div>
+</div>

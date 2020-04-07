@@ -1,6 +1,33 @@
+<div class="messageCard">
+    <div class="sideOne col-6">
+      <div class="col-6 leftCard">
+        <p>Message</p>
+        <p><%=  @submission.message %></p>
+      </div>
+      <div class="rightCard">
+        <p>From: <%=  @submission.user %> </p>
+        <p>Email: <%=  @submission.email %> </p>
+      </div>
+    </div>
+    <div class="sideTwo col-6 ">
 
-<h1>All Artists</h1>
-<% @submissions.each do |submission| %>
-<%= link_to submission.message, submission%>
- <% end %>
-<button><%= link_to "Add it here!", new_submission_path(@submission) %></h2></button>
+      <p><%=  @submission.caption %> </p>
+      <p><%=  @submission.video %> </p
+
+    <div class="">
+  <div class="">     image link  <%= image_tag @submission.image_url(:thumb).to_s  %></div>
+    <div class="">  video link <%=  link_to @submission.video  %></div>
+
+     <%= image_tag @submission.thumbnail  %>
+     <%= link_to @submission.video %>
+<!-- <#%= video_tag @submission.video %> -->
+<p><%=  @submission.caption %> </p>
+<p><%=  @submission.video %> </p
+    </div>
+
+
+
+
+        <%= link_to "Edit ", edit_submission_path(@submission)%>
+        <%= link_to "Delete", submission_path(@submission),  method: :delete %>
+    </div>
